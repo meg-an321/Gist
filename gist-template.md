@@ -40,9 +40,17 @@ Example for a phone number in the United States:
 
 
 ### Quantifiers
+Quantifiers control the number of times a character, group, or character class can appear in the input string.
+
+A few examples of quantifiers used the phone number  ? (Zero or one): will match zero or one occurrence of the preceding element.
+
+\d{3}: This will match the next 3 digits of the phone number.
+
+-: This matches the hyphen between the second and third parts of the phone number.
 
 
 ### Grouping Constructs
+Grouping constructors allows you to capture parts of the regez. To do this you will use parentheses () to capture groups.
 
 
 ### Bracket Expressions
