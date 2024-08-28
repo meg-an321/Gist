@@ -35,7 +35,7 @@ The example for a Regex ^ anchor indicates the beginning of the string. The doll
 
 Example for a phone number in the United States:
 
-^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$
+`^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$`
 
 
 
@@ -56,10 +56,10 @@ Grouping constructors allows you to capture parts of the regex. To do this you w
 ### Bracket Expressions
 Bracket expressions are used to specify characters to match, they are enclosed in square brackets[].
 
-Example for phone number, (999) 111-2222 would be writen as ^\(\d{3}\) \d{3}-\d{4}$ 
+Example for phone number, (999) 111-2222 would be writen as `^\(\d{3}\) \d{3}-\d{4}$ `
 
 or to find any phone number using a character class also known as [] in regex would be writen as 
-^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}?
+`^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}?`
 To understand what is going on in the regex it will be described in a gist linked in my author section of this page.
 
 ### Character Classes
@@ -89,7 +89,7 @@ For a phone number pattern like (XXX) XXX-XXXX, you use character escapes to mat
 
 Putting it all together, the regex pattern for a US phone number in the format (XXX) XXX-XXXX using character escapes would look like this:
 
-\(\d{3}\)\s\d{3}-\d{4}
+`\(\d{3}\)\s\d{3}-\d{4}`
 
 ## Author
 
