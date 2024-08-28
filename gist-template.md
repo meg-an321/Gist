@@ -50,7 +50,7 @@ A few examples of quantifiers used the phone number  ? (Zero or one): will match
 
 
 ### Grouping Constructs
-Grouping constructors allows you to capture parts of the regez. To do this you will use parentheses () to capture groups.
+Grouping constructors allows you to capture parts of the regex. To do this you will use parentheses () to capture groups.
 
 
 ### Bracket Expressions
@@ -81,7 +81,15 @@ For example, the regular expression cat|dog will match either "cat" or "dog". Th
 The following flags: g which stands for global search
 
 ### Character Escapes
+For a phone number pattern like (XXX) XXX-XXXX, you use character escapes to match the parentheses, hyphens, and whitespace.
 
+\( This matches an opening parenthesis "("
+
+\) This matches a closing parenthesis ")"
+
+Putting it all together, the regex pattern for a US phone number in the format (XXX) XXX-XXXX using character escapes would look like this:
+
+\(\d{3}\)\s\d{3}-\d{4}
 
 ## Author
 
